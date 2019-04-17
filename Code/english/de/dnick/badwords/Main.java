@@ -23,7 +23,7 @@ public class Main extends JavaPlugin implements Listener{
 	@EventHandler
 	public void on(AsyncPlayerChatEvent e) {
 		Player p = e.getPlayer();
-		String msg = e.getMessage();
+		String msg = e.getMessage().toLowerCase();
 		
 		//BadWords list to block. Add a word in a new line an write blocked.add("YOUR WORD");
 		List<String> blocked = new ArrayList<String>();
